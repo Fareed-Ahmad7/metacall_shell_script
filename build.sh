@@ -67,17 +67,11 @@ echo installing nodejs headers
 wget https://nodejs.org/download/release/v14.18.2/node-v14.18.2-headers.tar.gz
 tar -xzf node-v14.18.2-headers.tar.gz
 rm node-v14.18.2-headers.tar.gz
-cd node-v14.18.2-headers
-./configure
-make
 
 echo installing node-shared
 wget https://github.com/metacall/node.dll/releases/download/v0.0.1/node-shared-v14.18.2-x64.zip
 unzip node-shared-v14.18.2-x64.zip 
 rm node-shared-v14.18.2-x64.zip
-cd node-shared-v14.18.2-x64
-./configure
-make
 
 echo installing NodeJS DLL
 wget https://raw.githubusercontent.com/metacall/core/66fcaac300611d1c4210023e7b260296586a42e0/cmake/NodeJSGYPPatch.py
